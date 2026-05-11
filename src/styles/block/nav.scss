@@ -1,6 +1,4 @@
 .nav {
-  margin-right: 20px;
-
   &__link {
     position: relative;
     text-decoration: none;
@@ -57,6 +55,7 @@
 
 .site-logo__image {
   width: 40px;
+  right: 40px;
 }
 
 .nav__link.is-active {
@@ -65,4 +64,8 @@
 
 [data-qa='hover']:hover {
   color: $primary-color;
+}
+
+a {
+  display: flex;
 }
