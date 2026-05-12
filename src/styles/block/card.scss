@@ -8,10 +8,6 @@
   padding: 32px 16px 16px;
   font-family: Roboto, Arial, sans-serif;
 
-  &:hover {
-    transform: scale(1.2);
-  }
-
   &__image {
     width: 160px;
     height: 134px;
@@ -27,6 +23,15 @@
     color: $color-dark;
     margin-bottom: 4px;
     margin-top: 0;
+  }
+
+  &:hover {
+    transition: transform 300ms;
+    transform: scale(1.2);
+
+    .card__title {
+      color: #34568b;
+    }
   }
 
   &__code {
@@ -72,10 +77,12 @@
     margin-top: 16px;
     text-decoration: none;
     line-height: 16px;
+
+    transition: all 300ms;
   }
 
   &__buy:hover {
-    background-color: $color-border;
+    background-color: #fff;
     color: $color-primary;
     border-radius: 5px;
     border: 1px solid $color-primary;
@@ -94,8 +101,4 @@
     margin: 0;
     line-height: 14px;
   }
-}
-
-.card:last-child {
-  margin-right: -6px; // Ajusta para reduzir o espaço em 6px, deixando 40px da borda
 }
